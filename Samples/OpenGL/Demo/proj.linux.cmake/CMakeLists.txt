@@ -74,7 +74,7 @@ include_directories(
 # Add library paths.
 find_library(Live2DCubismCore
              NAMES Live2DCubismCore
-             PATHS ${CORE_DIR}/lib/linux/x86_64
+             PATHS ${CORE_DIR}/lib/experimental/rpi
              PATH_SUFFIXES lib
              NO_DEFAULT_PATH)
 
