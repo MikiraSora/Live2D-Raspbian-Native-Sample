@@ -1,47 +1,32 @@
-# Live2D-Linux-Native-Sample
-
-![Sample](./img/sample.gif)
+# Live2D-Raspbian-Native-Sample
 
 
-
-Live2D Sample Linux Native with OpenGL 
+Live2D Sample Raspbian (or Linux arm) Native with OpenGL 
 
 From official repo https://github.com/Live2D/CubismNativeSamples
 
 
 ## Environment
 
-| OS                | Ubuntu 18.04 / 64 bit |
+| OS                | Raspbian 10 buster 32 bit |
 | ----------------- | --------------------- |
 | **Packages**      | **Version**           |
-| CMake             | 3.16                  |
+| CMake             | > 3.15                |
 | Cubism SDK Native | 2.1 (Beta)            |
 | GLEW              | 2.1.0                 |
 | GLFW              | 3.3                   |
-
-#### * Warning *
-
-Normally, Ubuntu 18.04 's `CMake` does not meet the requirement,    
-You need to uninstall and install `Version 3.16` .
-
 
 
 ## Performance
 
 ![performance](./img/cpu-mem-usage.png)
 
-| Programs                           | CPU (i7-8565U 4c-8t)* | RAM          |
+| Programs                           | CPU (single core?) | FPS         |
 | ---------------------------------- | --------------------- | ------------ |
 | Glava                              | 29.3%                 | 20.6 MiB     |
-| **Live 2D Native cubism 3 OpenGL** | **19.3%**             | **26.1 MiB** |
-| Electron Live2D cubism 2           | 29.1%                 | 73.7 MiB     |
-
-\*The CPU usage is the sum of the usage of each cores.   
-
-Electron Live2D cubism 2 program here use [PPet](https://github.com/zenghongtu/PPet) as example.  
-Electron version require V8 runtime, web-sevber for backend API.   
-Since these two are different models/ codebase, they cannot be compared directly, so just for reference.   
-
+| **Live 2D Native OpenGL** | **6% ± 2%**             | > 60 normal |
+| Cocos Creator h5 + [unoffical plugin](https://github.com/playnb/Live2dForCocosCreator)      | full                | 50±2 normal ，> 60 overclock 2Ghz/800Mhz     |
+| Unity Html5 + offical plugin        | full                |  50±4 overclock 2Ghz/800Mhz     |
 
 
 ## Setup, and Run
@@ -58,11 +43,3 @@ Since these two are different models/ codebase, they cannot be compared directly
 ./build
 ```
 
-
-
-
-
-## Know More...
-
-Cubism 2 Desktop Widget with Electron - PPet   
-https://github.com/zenghongtu/PPet @ [zenghongtu](https://github.com/zenghongtu)
