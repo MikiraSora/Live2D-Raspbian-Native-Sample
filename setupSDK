@@ -8,3 +8,5 @@ echo "Downloading GLFW & GLEW..."
 
 echo "Compiling Live2D sample project..."
 ./Samples/OpenGL/Demo/proj.linux.cmake/make_gcc.sh
+
+git checkout README.md

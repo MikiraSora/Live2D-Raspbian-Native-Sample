@@ -1,2 +1,3 @@
 #!/bin/bash
+sed -e 's/linux\/x86_64/experimental\/rpi/g' -n Samples/OpenGL/Demo/proj.linux.cmake/CMakeLists.txt
 ./Samples/OpenGL/Demo/proj.linux.cmake/make_gcc.sh
