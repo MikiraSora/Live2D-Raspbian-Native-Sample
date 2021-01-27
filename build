@@ -1,4 +1,4 @@
 #!/bin/bash
 rm -rf ./Samples/OpenGL/Demo/proj.linux.cmake/build_make_gcc
-sed -e 's/linux\/x86_64/experimental\/rpi/g' Samples/OpenGL/Demo/proj.linux.cmake/CMakeLists.txt
+sed -i 's/linux\/x86_64/experimental\/rpi/g' Samples/OpenGL/Demo/proj.linux.cmake/CMakeLists.txt
 ./Samples/OpenGL/Demo/proj.linux.cmake/make_gcc.sh
